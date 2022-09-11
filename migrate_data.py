@@ -52,7 +52,9 @@ for f in df2.values:
         row[f[3]] = switcher.get(f[3])
     ftemp = f
 final_df.loc[len(final_df.index)] = list(row.values())
-print(final_df)
+#print(final_df)
+print("This program worked successfully")
+print("Everything has been condensed")
 final_df.to_sql('dim_element_duplicate', con=engine, index=False, if_exists='replace')
     
 
